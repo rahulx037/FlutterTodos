@@ -17,7 +17,12 @@ jobs:
       # Build :D
       - run: flutter build aot
       # Upload generated apk to the artifacts.
-      - uses: actions/upload-artifact@v1
-        with:
-          name: release-apk
-          path: build/app/outputs/apk/release/app-release.apk
+#      uses: r0adkll/upload-google-play@v1
+#      with:
+#        serviceAccountJson: ${{ SERVICE_ACCOUNT_JSON }}
+#        packageName: com.sapient.flutter_todo_app
+#        releaseFile: ${{ SIGNED_RELEASE_FILE}}
+#        track: beta
+#        userFraction: 0.33
+#        whatsNewDirectory: distribution/whatsnew
+#        mappingFile: app/build/outputs/mapping/release/mapping.txt
