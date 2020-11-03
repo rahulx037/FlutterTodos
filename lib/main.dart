@@ -61,20 +61,45 @@ class _IntroState extends State<Intro> {
                 children: <Widget>[
                   Expanded(flex: 1,
                       child: Container(
-                        child: Center(child: Text.rich(
-                            TextSpan(
-                                text: 'Welcome to ',
-                                style: TextStyle(
-                                  fontSize: 30
+                        child: Center(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text.rich(
+                                TextSpan(
+                                    text: 'Welcome to ',
+                                    style: TextStyle(
+                                      fontSize: 30
+                                    ),
+                                    children: <InlineSpan>[
+                                      TextSpan(
+                                        text: 'Clear',
+                                        style: TextStyle(fontSize: 32,fontWeight: FontWeight.bold),
+                                      )
+                                    ]
+                                )
+                        ),
+                                SizedBox(
+                                  height: 10.0,
                                 ),
-                                children: <InlineSpan>[
-                                  TextSpan(
-                                    text: 'Clear',
-                                    style: TextStyle(fontSize: 32,fontWeight: FontWeight.bold),
-                                  )
-                                ]
-                            )
-                        )),
+                                Text.rich(
+                                    TextSpan(
+                                        text: 'Tap or Swipe ',
+                                        style: TextStyle(
+                                            fontSize: 22,
+                                            fontWeight: FontWeight.bold
+                                        ),
+                                        children: <InlineSpan>[
+                                          TextSpan(
+                                            text: 'to Begin.',
+                                            style: TextStyle(fontSize: 22,fontWeight: FontWeight.normal),
+                                          )
+                                        ]
+                                    )
+                                ),
+
+                              ],
+                            )),
                       )),
 
                   SlideTile(

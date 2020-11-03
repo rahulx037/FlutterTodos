@@ -20,7 +20,6 @@ class SlideTile extends StatelessWidget {
               height: 150,
             ),
             Text(desc, textAlign: TextAlign.center,style: TextStyle(
-                fontWeight: FontWeight.w500,
                 fontSize: 20
             ),)
           ],

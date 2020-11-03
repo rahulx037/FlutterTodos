@@ -40,7 +40,7 @@ List<SliderModel> getSlides(){
   SliderModel sliderModel = new SliderModel();
 
   //1
-  sliderModel.setDesc("Discover a location offering the best accomodations near you");
+  sliderModel.setDesc("Clear sorts item by priority\n Important items highlighted \n at the top..");
   sliderModel.setTitle("Direct Visit To Houses");
   sliderModel.setImageAssetPath("assets/banner/1.png");
   slides.add(sliderModel);
